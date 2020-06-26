@@ -11,6 +11,7 @@
 <div class="container">
     <div class="row">
         <div class="cdc-faq-busca">
+            <h1>O que você precisa? </h1>
             <input id="cdc-faq-filter" type="text" placeholder="Qual a sua dúvida?">
         </div>
     </div>
@@ -60,11 +61,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script>
         $("#cdc-faq-filter").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
+            var value = $(this).val().toLowerCase()
             $(".cdc-faq__filter__content").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-            });
-        });
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+            })
+
+        })
 
     </script>
     

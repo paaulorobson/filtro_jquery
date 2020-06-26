@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Buscador</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="cdc-faq-busca">
+            <input id="cdc-faq-filter" type="text" placeholder="Qual a sua dúvida?">
+        </div>
+    </div>
+    <div class="cdc-faq-container">
+        <div class="cdc-faq__filter__content">
+            <div class="cdc-faq__box">
+                <h2>Cadastro</h2>
+                <ul>
+                    <li><a href="#">Como faço meu cadastro?</a></li>
+                    <li><a href="#">Por que preciso fazer meu cadastro?</a></li>
+                    <li><a href="#">Tanto Pessoa Jurídica quanto Pessoa Física podem se cadastrar?</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cdc-faq__filter__content">
+            <div class="cdc-faq__box">
+                <h2>Pagamentos</h2>
+                <ul>
+                    <li><a href="#">Quais as formas de pagamento?</a></li>
+                    <li><a href="#">É possível alterar a forma de pagamento após a conclusão do pedido?</a></li>
+                    <li><a href="#">Quais bandeiras de cartão são aceitas?</a></li>
+                    <li><a href="#">É possivel fazer a compra em dois cartões?</a></li>
+                    <li><a href="#">Posso pagar com CredNosso?</a></li>
+                    <li><a href="#">Já paguei o boleto, mas o pedido não foi confirmado. O que fazer?</a></li>
+                    <li><a href="#">Qual o prazo para confirmação do pagamento?</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cdc-faq__filter__content">
+            <div class="cdc-faq__box">
+                <h2>Serviços</h2>
+                <ul>
+                    <li><a href="#">É possível retirar uma compra do site na loja física?</a></li>
+                    <li><a href="#">Outra pessoa pode retirar o produto que comprei?</a></li>
+                    <li><a href="#">Como altero o meu endereço?</a></li>
+                    <li><a href="#">Qual o prazo de entrega?</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $("#cdc-faq-filter").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $(".cdc-faq__filter__content").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+        });
+
+    </script>
+    
+</body>
+</html>

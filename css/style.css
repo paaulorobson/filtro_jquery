@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+h2 {
+
+    margin-bottom: 5%;
+    color: #6c5ce7;
+}
+
+ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cdc-faq-busca {
+    margin-top: 5%;
+}
+
+#cdc-faq-filter {
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+}
+
+.cdc-faq-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.cdc-faq__box {
+    margin: 10px;
+    
+}
